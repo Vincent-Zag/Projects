@@ -1,0 +1,20 @@
+.up-or-down {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.stock-feed {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.indexContainer {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    margin-top: 15%;
+}
