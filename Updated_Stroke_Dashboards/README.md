@@ -6,6 +6,8 @@
   ### [Dashboard 2](https://public.tableau.com/views/Stroke_16880118094280/Dash2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
   ### [Dashboard 3](https://public.tableau.com/views/StrokeWorkbook_16879712510770/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
+- Maleiyah: Dashboard 3 Presentation
+- Adriel: Dashboard 1,2 Presentation
 
 # Stroke-Prediction
 
