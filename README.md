@@ -13,6 +13,22 @@ A small Demo of a Datalake refactoring transformation towars a DataWarehouse ⌛
 
 A small stocks record with AWS integration and ETL output 💸
 
-# Fifa Players Data Analysis
+# Bookstore-API
+
+a small demo of a bookstore and the CRUD operations within them.
+
+# Interactive Quiz
+
+a small demo of a quiz databse and the CRUD operations within them.
+
+# Data Analysis Notebooks
 
 A small notebook that completes and extends a dataset about Fifa Players
+
+A small notebook that completes and extends a dataset about Marvel Heroes
+
+A small notebook that completes and extends a dataset about Flower Stats
+
+
+
+
