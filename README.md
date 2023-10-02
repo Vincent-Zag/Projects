@@ -24,6 +24,10 @@ a small demo of a bookstore and the CRUD operations within them.
 
 a small demo of a quiz databse and the CRUD operations within them.
 
+# SimpleStore - Page
+
+a small demo that utilizes javascript in html pages with css to stlye and bootstrap
+
 # Data Analysis Notebooks
 
 A small notebook that completes and extends a dataset about Fifa Players
