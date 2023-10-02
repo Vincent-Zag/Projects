@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/NavbarLogo.png" alt="Logo" width="35" height="35" class="fs-4 d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <div id="user-info" class="user-info">
+                    <span id="username-display"></span>
+                </div>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="past_orders.html">Past Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="logout-link" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product listings -->
+    <center><h2>Products</h2></center>
+    <div id="product-list">
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item1.jpg" alt="Lamp Post">
+            <h3>Lamp Post</h3>
+            <p>Electricity sold seperately</p>
+            <p>$999.99</p>
+            <button class="button-20" onclick="addToCart('Lamp Post', 999.99)">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item2.jpg" alt="Gnome">
+            <h3>Gnome</h3>
+            <p>For your garden</p>
+            <p>$129.99</p>
+            <button class="button-20" onclick="addToCart('Gnome', 129.99)">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item3.jpg" alt="Chair">
+            <h3>Chair</h3>
+            <p>Something to sit on</p>
+            <p>$449.99</p>
+            <button class="button-20" onclick="addToCart('Chair', 449.99)">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item4.jpg" alt="Bed">
+            <h3>Bed</h3>
+            <p>Fits 1</p>
+            <p>$1499.99</p>
+            <button class="button-20" onclick="addToCart('Bed', 1499.99)">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item5.jpg" alt="Drawer">
+            <h3>Drawer</h3>
+            <p>Put stuff here</p>
+            <p>$799.99</p>
+            <button class="button-20" onclick="addToCart('Drawer', 799.99)">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item6.jpg" alt="Bookshelf">
+            <h3>Bookshelf</h3>
+            <p>Store you books</p>
+            <p>$1199.99</p>
+            <button class="button-20" onclick="addToCart('Bookshelf', 1199.99)">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item7.jpeg" alt="Toilet">
+            <h3>Toilet</h3>
+            <p>Drop off the kids</p>
+            <p>$499.99</p>
+            <button class="button-20" onclick="addToCart('Toilet', 499.99)">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item8.jpg" alt="Light">
+            <h3>Night Light</h3>
+            <p>Batteries sold seperately</p>
+            <p>$299.99</p>
+            <button class="button-20" onclick="addToCart('Light', 299.99)">Add</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="store_assets/item9.jpg" alt="OutofStock">
+            <h3>Redacted</h3>
+            <p>Too Popular</p>
+            <p>$9999.99</p>
+            <button class="button-20">Out of stock</button>
+        </div>
+
+    </div>
+
+    <div id="shopping-cart" onclick="checkout()">
+        <img id="cart-image" src="images/cart.jpg" alt="Cart">
+        <span id="cart-count">0</span>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

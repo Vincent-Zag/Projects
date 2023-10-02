@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        body {
+          background-image: url("images/IndexPage.jpg");
+          background-size: cover; 
+          background-position: center center;
+          background-attachment: fixed; 
+        }
+        
+        h1, h2 {
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            font-size: 60px;    
+        }
+        h4{
+            font-family: 'fantasy';
+            font-size: 50px;  
+            text-shadow: #000 2px 2px 2px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/NavbarLogo.png" alt="Logo" width="35" height="35" class="fs-4 d-inline-block align-top">
+        </a>
+    </nav>
+
+    <div class="container center-contents">
+        <div class="container center-contents">
+            <div class="login-form-container">
+                <center><h2 style="color:#135c44">Welcome!</h2></center>
+    
+                <div class="form-center">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" id="loginUsername" name="username"
+                                placeholder="Username" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-lg" id="loginPassword" name="password"
+                                placeholder="Password" required>
+                        </div>
+                        <center>
+                            <button onclick="login()" class="button-20">Login</button>
+                            <p></p>
+                            <p>Need an Account?</p>
+                            <button onclick="redirectToRegistration()" class="button-20">Register</button>
+                        </center>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
