@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Past Orders</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/NavbarLogo.png" alt="Logo" width="35" height="35" class="fs-4 d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <div id="user-info" class="user-info">
+                    <span id="username-display"></span>
+                </div>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="logout-link" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card">
+        <h2>Past Orders</h2>
+        <div id="pastOrdersList">
+
+        </div>
+    </div>
+
+    <script>
+        function displayPastOrders() {
+            const pastOrdersList = document.getElementById('pastOrdersList');
+            const pastOrdersJSON = localStorage.getItem('pastOrders');
+
+            if (pastOrdersJSON) {
+                const pastOrders = JSON.parse(pastOrdersJSON);
+
+                pastOrdersList.innerHTML = '';
+
+                pastOrders.forEach((order, index) => {
+                    const listItem = document.createElement('div');
+                    listItem.innerHTML = `
+                        <h2>Order Number: ${index + 1}</h2>
+                        <p>Date: ${order.date}</p>
+                        <ul>
+                            ${order.items.map(item => `<li>${item.name} - $${item.price.toFixed(2)}</li>`).join('')}
+                        </ul>
+                        <h3>Total: $${order.total.toFixed(2)}</h3>
+                    `;
+                    pastOrdersList.appendChild(listItem);
+                });
+            } else {
+                pastOrdersList.innerHTML = '<p>No past orders available.</p>';
+            }
+        }
+        displayPastOrders();
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
