@@ -26,7 +26,11 @@ a small demo of a quiz databse and the CRUD operations within them.
 
 # SimpleStore - Page
 
-a small demo that utilizes javascript in html pages with css to stlye and bootstrap
+A small demo that utilizes javascript in html pages with css to stlye and bootstrap
+
+# Bank Porject
+
+A small console demo that uses Java and classes with file storage capabilities
 
 # Data Analysis Notebooks
 
